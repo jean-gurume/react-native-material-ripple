@@ -97,13 +97,7 @@ export default class Ripple extends PureComponent {
 
   onPress(event) {}
 
-  onLongPress(event) {
-    let { onLongPress } = this.props;
-
-    if ("function" === typeof onLongPress) {
-      requestAnimationFrame(() => onLongPress(event));
-    }
-  }
+  onLongPress(event) {}
 
   onPressIn(event) {
     let { onPressIn } = this.props;
